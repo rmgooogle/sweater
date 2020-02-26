@@ -5,6 +5,8 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MessageRep extends CrudRepository<Message, Integer> {
+public interface MessageRep extends CrudRepository<Message, Long> {
+
     List<Message> findByTag(String tag);
+
 }
